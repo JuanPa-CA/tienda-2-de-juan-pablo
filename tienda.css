@@ -228,25 +228,23 @@ body {
 
 
 
-.botones{ /* Hacemos que el botón se posicione de forma absoluta */
-  bottom: 10px;      /* Distancia desde la parte inferior del contenedor */
-  right: 10px;       /* Distancia desde la parte derecha del contenedor */
+.botones{ 
+  top: 35px;      
   background-color: #fff;
   color: #000;
   border: 1px solid #ccc;
-  border-radius: 50%; /* Para que sea un círculo */
-  width: 35px;
-  height: 35px;
-  display: flex; /* Para centrar el '+' */
+  border-radius: 50%; 
+  width: 45px;
+  height: 45px;
+  display: flex; 
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
   cursor: pointer;
   gap: 20px;
-
-  
-
+  position:relative;
 }
+
 
 
 
@@ -671,5 +669,6 @@ body {
     align-items: center;
     color: var(--white-color);
 }
+
 
 
