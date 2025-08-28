@@ -316,7 +316,7 @@ body {
 /* Updated grid layout for Related Products */
 .related-products-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-areas:
         "kiwi small1 small2 small3"
         "kiwi small4 small5 small6";
@@ -767,6 +767,7 @@ body {
         justify-content: center;
     }
 }
+
 
 
 
