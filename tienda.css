@@ -461,13 +461,25 @@ position: static;
 /* Updated grid layout for Related Products */
 .related-products-grid {
     display: grid;
-     grid-template-columns: repeat(3, 1fr);
-     grid-template-rows: repeat(2, 1fr);
+     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
         "kiwi small1 small2 small3"
         "kiwi small4 small5 small6";
     gap: 10px;
     padding: 0 var(--grid-gap);
+
+    .uno{
+        display: grid;
+        grid-template-rows: 40% 60%;
+    }
+    .dos{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .tres{
+        display: grid;
+        grid-template-rowS: 60% 40%;
+    }
  
    
 }
@@ -487,7 +499,7 @@ position: static;
 }
 
 .related-product-item img {
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
     object-fit: cover;
     margin-bottom: 5px;
@@ -495,6 +507,136 @@ position: static;
     
     
 }
+
+
+
+.related-product-item {
+    background-color: var(--white-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 10px;
+    text-align: left;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.related-products-grid .related-product-item:nth-child(3) { 
+    grid-column: span 1; /* Kiwi takes up 1 column */
+    grid-row: span 2;    /* Kiwi takes up 2 rows */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between image and text */
+    align-items: flex-start;
+}
+
+.related-products-grid .related-product-item:nth-child(3) img {
+    max-width: 100%;
+    max-height: 150px; /* Adjust as needed for the larger image */
+    margin-bottom: 10px;
+}
+
+/* Adjust text and price styles to match the image */
+.related-product-item h3 { /* Assuming product name is an h3 */
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+.related-products-grid .related-product-item:nth-child(1) { 
+    /* Kiwi takes up 2 rows */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between image and text */
+    align-items: flex-start;
+}
+
+.related-products-grid .related-product-item:nth-child(1) img {
+ /* Adjust as needed for the larger image */
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+.related-products-grid .related-product-item:nth-child(2) { 
+    /* Kiwi takes up 2 rows */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between image and text */
+    align-items: flex-start;
+}
+
+.related-products-grid .related-product-item:nth-child(2) img {
+ /* Adjust as needed for the larger image */
+    margin-bottom: 10px;
+}
+
+
+
+
+.related-product-item .add-to-cart-btn { /* Assuming add to cart button */
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #555;
+    cursor: pointer;
+}
+
+/* Top right labels (Discount/Available) */
+.related-product-item .label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f0f0f0; /* Default background */
+    color: #333; /* Default text color */
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+
+
+
 
 .related-product-item.large-item-kiwi img,
 .related-product-item.large-item-grapes img {
@@ -581,18 +723,6 @@ position: static;
     font-size: 24px;
     font-weight: 700;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -938,4 +1068,3 @@ position: static;
         justify-content: center;
     }
 }
-
