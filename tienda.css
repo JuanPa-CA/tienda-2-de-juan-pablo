@@ -533,8 +533,8 @@ position: static;
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    border: none;
-    background-color: var(--secondary-color);
+    border:groove;
+    background-color: white;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -543,7 +543,7 @@ position: static;
 }
 
 .add-to-cart-btn::before {
-    content: '+';
+    content: '🛒';
     color: var(--white-color);
     font-size: 16px;
     font-weight: bold;
