@@ -804,9 +804,7 @@ position: static;
         font-size: 14px;
     }
 
-    .header-icons {
-        display: none;
-    }
+   
 
  
 
@@ -940,5 +938,134 @@ position: static;
 
     .footer-social .social-icons {
         justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        font-size: 14px;
+    }
+
+   
+
+    .all-products-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .filter-buttons {
+        justify-content: center;
+    }
+
+    .related-products-grid,
+    .recently-viewed-carousel {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 10px;
+    }
+
+    .related-product-item,
+    .recently-viewed-item {
+        min-width: 150px;
+        display: inline-block;
+        white-space: normal;
+    }
+
+    .related-products-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas: none;
+    }
+
+    .related-product-item:nth-child(1),
+    .related-product-item:nth-child(2),
+    .related-product-item:nth-child(3),
+    .related-product-item:nth-child(4),
+    .related-product-item:nth-child(5),
+    .related-product-item:nth-child(6),
+    .related-product-item:nth-child(7) {
+        grid-area: unset;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-subscribe {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-subscribe input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .footer-subscribe button {
+        width: 100%;
+    }
+
+    .footer-social .social-icons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .related-products-grid {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .related-product-item {
+        min-width: 160px; /* tamaño fijo de tarjeta */
+        flex: 0 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .img-de,
+    .img-iz,
+    .img-de-inf,
+    .img-iz-inf {
+        display: none;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .header-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
     }
 }
