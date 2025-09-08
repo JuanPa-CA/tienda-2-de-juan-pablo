@@ -941,6 +941,10 @@ position: static;
     }
 }
 
+.footer-email{
+    font-size: 14px;
+    cursor: pointer;
+}
 
 
 
@@ -1069,4 +1073,5 @@ position: static;
         gap: 15px;
     }
 }
+
 
