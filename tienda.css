@@ -441,7 +441,7 @@ body {
 }
 
 .carousel-nav-btn.left-arrow {
-    left: -30px;
+    left: -20px;
 }
 
 .carousel-nav-btn.right-arrow {
@@ -1160,6 +1160,7 @@ body {
         gap: 15px;
     }
 }
+
 
 
 
