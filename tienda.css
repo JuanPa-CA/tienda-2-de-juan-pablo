@@ -445,7 +445,7 @@ body {
 }
 
 .carousel-nav-btn.right-arrow {
-    right: -40px;
+    right: -10px;
 }
 
 /* Oculta la barra de scroll */
@@ -1160,6 +1160,7 @@ body {
         gap: 15px;
     }
 }
+
 
 
 
