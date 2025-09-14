@@ -1035,6 +1035,14 @@ input:checked+.slider:before {
         font-size: 14px;
     }
 
+    .related-product-item span {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 12px;
+
+    bottom:  -12px;
+
+}
 
 
     .all-products-header {
