@@ -569,7 +569,6 @@ input:checked+.slider:before {
     background-color: rgb(224, 165, 55);
     color: var(--white-color);
     padding: 4px 8px;
-    border-radius: 15px;
     font-size: 10px;
 }
 
@@ -1040,7 +1039,7 @@ input:checked+.slider:before {
     font-weight: bold;
     font-size: 12px;
 
-    bottom:  -12px;
+    bottom:  -10px;
 
 }
 
