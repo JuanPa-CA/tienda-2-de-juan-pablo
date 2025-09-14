@@ -1145,9 +1145,19 @@ input:checked+.slider:before {
         gap: 15px;
     }
 
+ .product-tas{
+padding-top: 24px;
 
 
 
+}
+ .span{
+    top: 20px;
+}
+.p{
+   position: absolute;
+   
+}
 
 }
 
