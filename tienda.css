@@ -1138,14 +1138,7 @@ input:checked+.slider:before {
     }
 
 
-   .related-product-item span {
-    color: var(--primary-color);
-    font-weight: bold;
-    font-size: 12px;
-    padding-left: 50px;
-    bottom:  -20px;
 
-}
 
 
 }
