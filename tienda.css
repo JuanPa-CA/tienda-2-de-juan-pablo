@@ -270,6 +270,7 @@ body {
     padding: 40px 0;
     position: relative;
     overflow: hidden;
+   
 
 }
 
@@ -1147,18 +1148,21 @@ input:checked+.slider:before {
 
  .product-tas{
 padding-top: 24px;
-
+position: absolute;
 
 
 }
- .span{
-    top: 20px;
-}
-.p{
-   position: absolute;
-   
-}
 
+
+/* Estilos para el precio del producto */
+.related-product-item span {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 12px;
+  padding-left: 50px;
+ position: relative;
+  
+}
 }
 
 
