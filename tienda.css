@@ -1213,7 +1213,7 @@ font-size: 13px;
   color: var(--primary-color);
   font-weight: bold;
   font-size: 13px;
-  padding-left: 40px;
+  padding-left: 50px;
  position: relative;
  
  
@@ -1265,3 +1265,4 @@ font-size: 13px;
         scroll-snap-align: start;
     }
 }
+
