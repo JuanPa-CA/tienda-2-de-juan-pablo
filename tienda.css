@@ -1147,7 +1147,7 @@ input:checked+.slider:before {
     }
 
  .product-tas{
-padding-top: 24px;
+padding-top: 23px;
 position: absolute;
 
 
@@ -1161,6 +1161,7 @@ position: absolute;
   font-size: 12px;
   padding-left: 50px;
  position: relative;
+ 
   
 }
 }
@@ -1197,6 +1198,26 @@ position: absolute;
     .related-subtitle {
         text-align: center;
     }
+
+     .product-tas{
+padding-top: 22px;
+position: absolute;
+
+
+}
+
+
+/* Estilos para el precio del producto */
+.related-product-item span {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 13px;
+  padding-left: 40px;
+ position: relative;
+ 
+ 
+  
+}
 }
 
 
