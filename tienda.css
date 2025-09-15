@@ -1200,8 +1200,9 @@ position: absolute;
     }
 
      .product-tas{
-padding-top: 22px;
+
 position: absolute;
+font-size: 13px;
 
 
 }
@@ -1214,6 +1215,7 @@ position: absolute;
   font-size: 13px;
   padding-left: 40px;
  position: relative;
+ 
  
  
   
